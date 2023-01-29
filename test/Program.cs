@@ -14,5 +14,18 @@ int FindSizeNewArray (string[] arr)
     return count;
 }
 
+string[] FillNewArray (string[] arr, int size)
+{
+    string[] newArray = new string[size];
+    for(int i = 0; i < arr.Length; i++)
+    {
+        if(arr[i].Length <= 3)
+        {
+            newArray[i] = arr[i];
+        }
+    }
+    return newArray;
+}
+
 int size = FindSizeNewArray(array);
 Console.WriteLine(size);
