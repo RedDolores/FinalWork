@@ -27,5 +27,16 @@ string[] FillNewArray (string[] arr, int size)
     return newArray;
 }
 
+void PrintArray(string[] arr)
+{
+    for(int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]} ");
+    }
+}
+
+
+
 int size = FindSizeNewArray(array);
 Console.WriteLine(size);
+PrintArray(array);
